@@ -1,0 +1,269 @@
+You are a senior frontend engineer and elite SaaS UI architect.
+
+I want you to build a world-class premium Admin Dashboard using:
+- React
+- Vite
+- Tailwind CSS v4
+- React Router Data Mode
+- Framer Motion
+- Recharts
+
+The dashboard must look like a modern enterprise SaaS application inspired by Stripe, Vercel, Linear, Notion, and Framer.
+
+The UI must feel premium, polished, scalable, production-ready, and portfolio-worthy.
+
+==================================================
+PROJECT ARCHITECTURE
+==================================================
+
+Create the project using a professional scalable architecture.
+
+Use this exact component structure:
+
+components/
+ ├── layout/
+ │    ├── Sidebar.jsx
+ │    ├── MobileSidebar.jsx
+ │    ├── Navbar.jsx
+ │    ├── Topbar.jsx
+ │    ├── DashboardLayout.jsx
+ │    ├── PageContainer.jsx
+ │    └── ProtectedLayout.jsx
+
+components/
+ ├── ui/
+ │    ├── Button.jsx
+ │    ├── Input.jsx
+ │    ├── Modal.jsx
+ │    ├── Drawer.jsx
+ │    ├── Dropdown.jsx
+ │    ├── Avatar.jsx
+ │    ├── Badge.jsx
+ │    ├── Tooltip.jsx
+ │    ├── Loader.jsx
+ │    ├── Skeleton.jsx
+ │    ├── EmptyState.jsx
+ │    ├── ErrorState.jsx
+ │    ├── SearchBar.jsx
+ │    ├── ThemeToggle.jsx
+ │    ├── Pagination.jsx
+ │    └── SectionTitle.jsx
+
+components/
+ ├── dashboard/
+ │    ├── StatsCard.jsx
+ │    ├── RevenueCard.jsx
+ │    ├── AnalyticsCard.jsx
+ │    ├── ActivityTimeline.jsx
+ │    ├── RecentOrders.jsx
+ │    ├── SalesOverview.jsx
+ │    ├── UserGrowthChart.jsx
+ │    ├── RevenueChart.jsx
+ │    ├── TrafficChart.jsx
+ │    ├── DashboardHeader.jsx
+ │    └── QuickActions.jsx
+
+components/
+ ├── tables/
+ │    ├── UsersTable.jsx
+ │    ├── OrdersTable.jsx
+ │    ├── ProductsTable.jsx
+ │    ├── TableHeader.jsx
+ │    ├── TableRow.jsx
+ │    ├── TablePagination.jsx
+ │    └── TableSearch.jsx
+
+components/
+ ├── charts/
+ │    ├── LineChart.jsx
+ │    ├── BarChart.jsx
+ │    ├── PieChart.jsx
+ │    ├── AreaChart.jsx
+ │    └── AnalyticsChart.jsx
+
+components/
+ ├── forms/
+ │    ├── LoginForm.jsx
+ │    ├── UserForm.jsx
+ │    ├── ProductForm.jsx
+ │    ├── SettingsForm.jsx
+ │    └── SearchFilterForm.jsx
+
+components/
+ ├── features/
+ │    ├── notifications/
+ │    ├── messages/
+ │    ├── analytics/
+ │    ├── settings/
+ │    ├── users/
+ │    └── products/
+
+components/
+ ├── auth/
+ │    ├── LoginCard.jsx
+ │    ├── SocialLogin.jsx
+ │    ├── ForgotPassword.jsx
+ │    └── ProtectedRoute.jsx
+
+pages/
+ ├── Dashboard.jsx
+ ├── Analytics.jsx
+ ├── Users.jsx
+ ├── Products.jsx
+ ├── Orders.jsx
+ ├── Transactions.jsx
+ ├── Messages.jsx
+ ├── Notifications.jsx
+ ├── Settings.jsx
+ ├── Profile.jsx
+ ├── Login.jsx
+ └── NotFound.jsx
+
+==================================================
+DESIGN REQUIREMENTS
+==================================================
+
+The design must:
+- look ultra modern
+- feel like a premium SaaS product
+- use a professional dark theme
+- include glassmorphism effects
+- use elegant gradients
+- have soft shadows
+- use excellent spacing and visual hierarchy
+- use clean typography
+- include beautiful hover effects
+- include smooth animations
+- feel highly polished
+
+Do NOT make the dashboard look beginner-level.
+
+==================================================
+RESPONSIVE REQUIREMENTS
+==================================================
+
+The dashboard must be:
+- fully responsive
+- mobile optimized
+- tablet optimized
+- desktop optimized
+
+Include:
+- responsive sidebar drawer
+- collapsible sidebar
+- sticky navbar
+- mobile menu toggle
+- responsive tables
+- responsive cards
+
+==================================================
+ROUTING REQUIREMENTS
+==================================================
+
+Use React Router Data Mode architecture:
+- createBrowserRouter
+- RouterProvider
+- nested routes
+- loaders
+- actions
+- protected routes
+- errorElement
+- lazy loading
+
+==================================================
+FEATURE REQUIREMENTS
+==================================================
+
+Include:
+- Dashboard analytics
+- Revenue charts
+- User management UI
+- Product management UI
+- Orders management
+- Notifications panel
+- Search functionality
+- Pagination
+- Filtering
+- Dark/light mode
+- Loading skeletons
+- Empty states
+- Error states
+- Modal system
+- Toast notification system
+- Activity timeline
+
+==================================================
+CHART REQUIREMENTS
+==================================================
+
+Use Recharts for:
+- Revenue analytics
+- Sales overview
+- User growth
+- Traffic analytics
+- Monthly performance
+
+==================================================
+ANIMATION REQUIREMENTS
+==================================================
+
+Use Framer Motion for:
+- page transitions
+- sidebar animation
+- dropdown animation
+- card hover effects
+- modal animations
+- loading transitions
+
+==================================================
+CODE QUALITY
+==================================================
+
+Code must:
+- be clean and maintainable
+- use reusable components
+- use functional React components
+- use best practices
+- use modular architecture
+- avoid duplicated code
+- follow senior-level frontend standards
+
+==================================================
+IMPORTANT
+==================================================
+
+Think and code like a senior frontend engineer working at:
+- Stripe
+- Vercel
+- Linear
+- Notion
+
+The final result must look like a real production-level SaaS admin dashboard.
+
+Do NOT generate beginner-level UI or architecture.
+
+==================================================
+OUTPUT FORMAT
+==================================================
+
+Step by step:
+1. Project setup
+2. Folder structure
+3. Routing architecture
+4. Layout components
+5. UI components
+6. Dashboard components
+7. Charts
+8. Tables
+9. Authentication pages
+10. Final polish and animations
+
+Give:
+- installation commands
+- full folder structure
+- all component code
+- all page code
+- routing setup
+- Tailwind setup
+- responsive implementation
+- production-ready final code
