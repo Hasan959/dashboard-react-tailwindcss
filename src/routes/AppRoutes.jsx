@@ -1,23 +1,26 @@
-import React from "react";
-import { Route, Routes } from "react-router";
+import { Routes, Route } from "react-router";
 
-import Footer from "../components/pages/footer";
-import MainLayouts from "../mainLayouts/MainLayouts";
+import MainLayout from "../mainLayouts/MainLayouts";
+import DashboardLayout from "../components/layout/DashboardLayout";
+
 import Home from "../components/pages/Home";
-
-
+import Dashboard from "../components/pages/Dashboard";
 
 const AppRoutes = () => {
   return (
-    <>
-      <Routes>
-        <Route element ={<MainLayouts/>}> 
-        <Route path="/" element={<Home/> } />
-        <Route path="/products" element={<Footer/>} />
-        </Route>
-         
-      </Routes>
-    </>
+    <Routes>
+
+      {/* PUBLIC ROUTE */}
+      <Route element={<MainLayout />}>
+        <Route path="/" element={<Home />} />
+      </Route>
+
+      {/* DASHBOARD ROUTE */}
+      <Route element={<DashboardLayout />}>
+        <Route path="/sidebar" element={<Dashboard />} />
+      </Route>
+
+    </Routes>
   );
 };
 

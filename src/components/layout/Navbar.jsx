@@ -64,6 +64,8 @@ const AdvancedAdminNavbar = ({ toggleSidebar }) => {
   return (
     <nav className="bg-[var(--bg)] text-[var(--text)] border-b border-[var(--border)] fixed top-0 left-0 right-0 z-40 h-16 flex items-center justify-between px-4 sm:px-6 transition-all duration-300">
 
+     
+
       {/* LEFT */}
       <div className="flex items-center gap-4">
         <button
