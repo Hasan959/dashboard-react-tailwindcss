@@ -3,8 +3,9 @@ import { Routes, Route } from "react-router";
 import MainLayout from "../mainLayouts/MainLayouts";
 import DashboardLayout from "../components/layout/DashboardLayout";
 
-import Home from "../components/pages/Home";
+
 import Dashboard from "../components/pages/Dashboard";
+import Sidebar from "../components/layout/Sidebar";
 
 const AppRoutes = () => {
   return (
@@ -12,7 +13,7 @@ const AppRoutes = () => {
 
       {/* PUBLIC ROUTE */}
       <Route element={<MainLayout />}>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Sidebar />} />
       </Route>
 
       {/* DASHBOARD ROUTE */}
