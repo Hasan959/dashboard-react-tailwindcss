@@ -16,7 +16,7 @@ import {
   Clock,
 } from "lucide-react";
 
-const AdvancedAdminNavbar = ({ toggleSidebar }) => {
+const Navbar = ({ toggleSidebar }) => {
   const [isProfileOpen, setIsProfileOpen] = useState(false);
   const [isNotificationOpen, setIsNotificationOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -195,4 +195,4 @@ const AdvancedAdminNavbar = ({ toggleSidebar }) => {
   );
 };
 
-export default AdvancedAdminNavbar;
+export default Navbar;

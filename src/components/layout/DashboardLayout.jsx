@@ -1,13 +1,13 @@
 import { useState } from "react";
 import Sidebar from "./Sidebar";
-import AdvancedAdminNavbar from "./Navbar";
+import Navbar from "./Navbar";
 import { Outlet } from "react-router";
 
 const DashboardLayout = () => {
   const [collapsed, setCollapsed] = useState(false);
 
   return (
-    <div className="flex min-h-screen bg-[#0a0a0a] text-white">
+    <div className="flex min-h-screen bg-[#550606] text-white">
 
       {/* SIDEBAR */}
       <Sidebar
@@ -19,7 +19,7 @@ const DashboardLayout = () => {
       <div className="flex-1 flex flex-col">
 
         {/* NAVBAR */}
-        <AdvancedAdminNavbar
+        <Navbar
           collapsed={collapsed}
           setCollapsed={setCollapsed}
         />

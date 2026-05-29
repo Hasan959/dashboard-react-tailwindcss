@@ -14,6 +14,7 @@ const AppRoutes = () => {
       {/* PUBLIC ROUTE */}
       <Route element={<MainLayout />}>
         <Route path="/" element={<Sidebar />} />
+        <Route path="/dashboardlayout" element={<Sidebar/>} />
       </Route>
 
       {/* DASHBOARD ROUTE */}

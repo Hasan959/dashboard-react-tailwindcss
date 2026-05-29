@@ -21,7 +21,7 @@ import {
 const navItems = [
   {
     title: "Dashboard",
-    path: "/",
+    path: "/sidebar",
     icon: LayoutDashboard,
   },
   {
@@ -85,19 +85,23 @@ const Sidebar = ({ collapsed, setCollapsed }) => {
         h-screen
         sticky top-0
         flex-col
-        border-r border-white/10
-        bg-white/5
+        border-r
+        border-[var(--border)]
+        bg-[var(--card)]
+        text-[var(--text)]
         backdrop-blur-xl
         shadow-2xl
+        transition-all duration-300
       "
     >
-      {/* Logo */}
+      {/* LOGO */}
       <div
         className="
           flex items-center
           justify-between
           px-6 py-6
-          border-b border-white/10
+          border-b
+          border-[var(--border)]
         "
       >
         {!collapsed && (
@@ -108,8 +112,8 @@ const Sidebar = ({ collapsed, setCollapsed }) => {
                 font-bold
                 tracking-tight
                 bg-gradient-to-r
-                from-indigo-400
-                to-cyan-400
+                from-indigo-500
+                to-cyan-500
                 bg-clip-text
                 text-transparent
               "
@@ -117,22 +121,22 @@ const Sidebar = ({ collapsed, setCollapsed }) => {
               Nova Admin
             </h1>
 
-            <p className="text-xs text-zinc-400 mt-1">
+            <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
               Enterprise Dashboard
             </p>
           </div>
         )}
 
-        {/* Collapse Button */}
+        {/* COLLAPSE BUTTON */}
         <button
           onClick={() => setCollapsed(!collapsed)}
           className="
             flex items-center justify-center
             w-10 h-10
             rounded-xl
-            bg-white/5
-            hover:bg-white/10
-            border border-white/10
+            bg-[var(--hover)]
+            hover:scale-105
+            border border-[var(--border)]
             transition-all
             cursor-pointer
           "
@@ -145,7 +149,7 @@ const Sidebar = ({ collapsed, setCollapsed }) => {
         </button>
       </div>
 
-      {/* Nav */}
+      {/* NAVIGATION */}
       <div className="flex-1 overflow-y-auto px-4 py-6 space-y-2">
         {navItems.map((item, index) => {
           const Icon = item.icon;
@@ -163,7 +167,7 @@ const Sidebar = ({ collapsed, setCollapsed }) => {
                   rounded-2xl
                   transition-all duration-300
                   overflow-hidden
-                  
+
                   ${
                     isActive
                       ? `
@@ -171,19 +175,19 @@ const Sidebar = ({ collapsed, setCollapsed }) => {
                         from-indigo-500/20
                         to-cyan-500/20
                         border border-indigo-500/20
-                        text-white
+                        text-indigo-500
                         shadow-lg
                       `
                       : `
-                        text-zinc-400
-                        hover:text-white
-                        hover:bg-white/5
+                        text-gray-500
+                        hover:text-[var(--text)]
+                        hover:bg-[var(--hover)]
                       `
                   }
                 `
               }
             >
-              {/* Glow */}
+              {/* HOVER GLOW */}
               <div
                 className="
                   absolute inset-0
@@ -196,7 +200,7 @@ const Sidebar = ({ collapsed, setCollapsed }) => {
                 "
               />
 
-              {/* Icon */}
+              {/* ICON */}
               <Icon
                 size={22}
                 className="
@@ -205,7 +209,7 @@ const Sidebar = ({ collapsed, setCollapsed }) => {
                 "
               />
 
-              {/* Text */}
+              {/* TEXT */}
               {!collapsed && (
                 <span
                   className="
@@ -223,11 +227,12 @@ const Sidebar = ({ collapsed, setCollapsed }) => {
         })}
       </div>
 
-      {/* Bottom User Card */}
+      {/* USER CARD */}
       <div
         className="
           p-4
-          border-t border-white/10
+          border-t
+          border-[var(--border)]
         "
       >
         <div
@@ -235,12 +240,12 @@ const Sidebar = ({ collapsed, setCollapsed }) => {
             flex items-center
             gap-3
             rounded-2xl
-            bg-white/5
-            border border-white/10
+            bg-[var(--hover)]
+            border border-[var(--border)]
             p-3
           "
         >
-          {/* Avatar */}
+          {/* AVATAR */}
           <div
             className="
               flex items-center justify-center
@@ -258,11 +263,11 @@ const Sidebar = ({ collapsed, setCollapsed }) => {
 
           {!collapsed && (
             <div>
-              <h4 className="text-sm font-semibold text-white">
+              <h4 className="text-sm font-semibold text-[var(--text)]">
                 Hasan Mahmud
               </h4>
 
-              <p className="text-xs text-zinc-400">
+              <p className="text-xs text-gray-500 dark:text-gray-400">
                 Frontend Engineer
               </p>
             </div>
