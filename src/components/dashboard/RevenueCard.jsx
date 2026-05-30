@@ -2,7 +2,7 @@ import React from 'react'
 
 const RevenueCard = () => {
   return (
-    <div>RevenueCard</div>
+    <div>RevenueCardd </div>
   )
 }
 

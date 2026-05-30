@@ -2,7 +2,7 @@ import React from 'react'
 
 const UserGrowthChart = () => {
   return (
-    <div>UserGrowthChart</div>
+    <div>UserGrowthChartt</div>
   )
 }
 
