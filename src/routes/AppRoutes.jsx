@@ -7,6 +7,7 @@ import DashboardLayout from "../components/layout/DashboardLayout";
 import Dashboard from "../components/pages/Dashboard";
 import Sidebar from "../components/layout/Sidebar";
 
+
 const AppRoutes = () => {
   return (
     <Routes>
@@ -14,12 +15,13 @@ const AppRoutes = () => {
       {/* PUBLIC ROUTE */}
       <Route element={<MainLayout />}>
         <Route path="/" element={<Sidebar />} />
-        <Route path="/dashboardlayout" element={<Sidebar/>} />
+        {/* <Route path="/dashboardlayout" element={<Sidebar/>} /> */}
       </Route>
 
       {/* DASHBOARD ROUTE */}
       <Route element={<DashboardLayout />}>
         <Route path="/sidebar" element={<Dashboard />} />
+        
       </Route>
 
     </Routes>
