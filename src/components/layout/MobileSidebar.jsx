@@ -14,7 +14,7 @@ const menuItems = [
   { name: "Profile", path: "/profile" },
   { name: "Login", path: "/login" },
 ];
-
+//props receved DashboardLayout.jsx
 const MobileSidebar = ({ isOpen, setIsOpen }) => {
   return (
     <>

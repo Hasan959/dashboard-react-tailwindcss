@@ -25,7 +25,7 @@ const DashboardLayout = () => {
       <div className="flex-1 flex flex-col">
 
         {/* NAVBAR */}
-        <Navbar toggleSidebar={() => setMobileOpen(true)} />
+        <Navbar toggleSidebar={() => setMobileOpen(true)} />  //toggleSidebar function tar kaj holo mobile view te menu item gulo dekha
 
         {/* CONTENT */}
         <main className="pt-16 p-4">
