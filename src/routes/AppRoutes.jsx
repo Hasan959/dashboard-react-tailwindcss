@@ -13,13 +13,14 @@ import Messages from "../components/pages/Messages";
 import Notifications from "../components/pages/Notifications";
 import Settings from "../components/pages/Settings";
 import Profile from "../components/pages/Profile";
+import Sidebar from "../components/layout/Sidebar";
 
 const AppRoutes = () => {
   return (
     <Routes>
       {/* PUBLIC ROUTE */}
       <Route element={<MainLayout />}>
-        <Route path="/" element={<Dashboard />} />
+        <Route path="/" element={<Sidebar />} />
       </Route>
 
       {/* DASHBOARD ROUTE */}

@@ -2,7 +2,7 @@ import { X } from "lucide-react";
 import { NavLink } from "react-router";
 
 const menuItems = [
-  { name: "Dashboard", path: "/sidebar" },
+  { name: "Dashboard", path: "/dashboard" },
   { name: "Analytics", path: "/analytics" },
   { name: "Users", path: "/users" },
   { name: "Products", path: "/products" },
