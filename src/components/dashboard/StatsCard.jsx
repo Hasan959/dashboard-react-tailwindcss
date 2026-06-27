@@ -4,7 +4,7 @@ const StatsCard = ({
   title,
   value,
   icon,
-  growth,
+  growth = 0,
   bgColor = "bg-white",
 }) => {
   return (
@@ -17,7 +17,7 @@ const StatsCard = ({
             {title}
           </h4>
 
-          <h2 className="text-3xl font-bold text-gray-800 mt-2">
+          <h2 className="text-2xl md:text-3xl font-bold text-gray-800 mt-2">
             {value}
           </h2>
 
@@ -34,7 +34,7 @@ const StatsCard = ({
         </div>
 
         <div className="w-14 h-14 rounded-xl bg-indigo-100 flex items-center justify-center text-indigo-600 text-2xl">
-          {icon}
+          {icon || "📊"}
         </div>
       </div>
     </div>
