@@ -26,7 +26,7 @@ const MobileSidebar = ({ isOpen, setIsOpen }) => {
         }`}
       />
 
-      {/* SIDE MENU */}
+      {/* SIDE MENU BAR */}
       <div
         className={`fixed top-0 left-0 h-full w-72 bg-[var(--bg)] z-50 shadow-xl transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
