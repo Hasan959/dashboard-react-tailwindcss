@@ -1,18 +1,21 @@
-import React from 'react'
-import Footer from '../components/pages/footer'
-import Navbar from '../components/layout/Navbar'
-import { Outlet } from 'react-router'
+
+import React from 'react';
+import Footer from '../components/pages/Footer';
+import Navbar from '../components/layout/Navbar';
+import { Outlet } from 'react-router';
 
 const MainLayouts = () => {
   return (
     <>
-       < Navbar/>
+      <Navbar />
+
       <main className="pt-16">
         <Outlet />
       </main>
-      <Footer/>
-    </>
-  )
-}
 
-export default MainLayouts
+      <Footer />
+    </>
+  );
+};
+
+export default MainLayouts;
